@@ -30,9 +30,9 @@ function process_text(e)
         text = text.replace(/W([a-z ])/g, "Oo$1");
         text = text.replace(/W([A-Z])/g, "OO$1");
 
-        text = text.replace(/(^|\W)y/g, "ee");
-        text = text.replace(/(^|\W)Y([a-z ])/g, "Ee$1");
-        text = text.replace(/(^|\W)Y([A-Z])/g, "EE$1");
+        text = text.replace(/(^|\W)y/g, "$1ee");
+        text = text.replace(/(^|\W)Y([a-z ])/g, "$1Ee$2");
+        text = text.replace(/(^|\W)Y([A-Z])/g, "$1EE$2");
     }
 
     output_textarea.value = text;
