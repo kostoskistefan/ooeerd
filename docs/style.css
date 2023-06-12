@@ -1,0 +1,19 @@
+* {
+    font-family: Montserrat; 
+}
+
+body::after {
+    content: "";
+    background: url('https://www.toptal.com/designers/subtlepatterns/uploads/papyrus-dark.png');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+h4, textarea {
+    border-radius: 0 !important;
+}
